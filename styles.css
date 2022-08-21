@@ -1,0 +1,141 @@
+:root {
+    --header: #57443f;
+    --topt: #0f70bf;
+    --topbg: #9bc6e8;
+    --topbo: #2e7ebf;
+    --middlet: #e39d07;
+    --middlebg: #f0d7a3;
+    --middlebo: #bf8b30;
+    --bottomt: #b04831;
+    --bottombg: #f2a594;
+    --bottombo: #9e4c36;
+    font-family: Helvetica, sans-serif;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+header h1 {
+    font-size: 2.75em;
+    color: var(--middlebo);
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px;
+    color: var(--bottombo);
+    background-color: var(--topbg);
+    padding: 10px 5px 1px 5px;
+}
+
+nav a:hover {
+    background-color: var(--middlebg);
+    text-decoration: underline;
+}
+
+@media (max-width: 520px) {
+    nav {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+}
+
+/* Main */
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--header);
+}
+
+.container {
+    max-width: 600px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 50px auto;
+    /* border: 2px solid #000; not required */
+}
+
+.center {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+h1, h2, .center {
+    text-align: center;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+hr {
+    margin-top: 0;    
+}
+
+.smHead {
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+    padding: 5px;
+}
+
+i {
+    margin-top: 15px;
+}
+
+/* Top Boxes */
+
+.top {
+    border: 1px solid var(--topbo);    
+    color: var(--topt);
+}
+
+.top hr {
+    border-top: 0.5px solid var(--topbo);
+}
+
+.top .smHead {
+    background-color: var(--topbg);
+}
+
+/* Middle Boxes */
+
+.middle {
+    border: 1px solid var(--middlebo);
+    color: var(--middlet);
+}
+
+.middle hr {
+    border-top: 0.5px solid var(--middlebo);
+}
+
+.middle .smHead {
+    background-color: var(--middlebg);
+}
+
+/* Bottom Boxes */
+
+.bottom {
+    border: 1px solid var(--bottombo);
+    color: var(--bottomt);
+}
+
+.bottom hr {
+    border-top: 0.5px solid var(--bottombo);
+}
+
+.bottom .smHead {
+    background-color: var(--bottombg);
+}
